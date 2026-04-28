@@ -10,7 +10,7 @@
 
 ## 1️⃣ Visão Geral da Solução
 
-O projeto consiste num **Temporizador de Intervalos e Descanso** implementado com ESP32. O objetivo é oferecer um sistema de cronometragem preciso para atividades que exigem tempos de pausa rigorosos, como treinos de hipertrofia ou processos industriais cíclicos. O sistema permite configurar o tempo de forma incremental, iniciar/pausar a contagem e emite um alerta visual quando o tempo se esgota.
+O projeto consiste num **Temporizador de Intervalos e Descanso** implementado com ESP32. O objetivo é oferecer um sistema de cronometragem preciso para atividades que exigem tempos de pausa rigorosos, como treinos de hipertrofia ou processos industriais cíclicos. O sistema permite configurar o tempo usando um teclado numérico, iniciar/pausar a contagem e emite um alerta visual e sonoro quando o tempo se esgota, além de contar com um display I2C que torna a visualização da contagem do tempo e dos eventos muito agradáveis.
 
 ---
 
@@ -60,6 +60,6 @@ O sistema mostrou plena estabilidade durante os testes de simulação:
 
 ## 6️⃣ Comentários Adicionais
 
-A principal dificuldade encontrada foi a sincronização inicial entre o ambiente de build local e o pipeline do Wokwi CLI, que resolvida colocando um `print("Teste")` no código principal. Como melhoria futura, a implementação de um display OLED I2C permitiria uma interface melhor para o usuário, exibindo o tempo em formato MM:SS em vez de apenas logs no terminal.
+A principal dificuldade encontrada foi a sincronização inicial entre o ambiente de build local e o pipeline do Wokwi CLI, que resolvida colocando um `print("Teste")` no código principal. Como melhoria futura, a implementação de uma placa wifi que permita conexões com outros dispositivos, alertando os eventos do cronômetro ou automatizando comandos em alguma tarefa específica.
 
 ---
