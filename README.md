@@ -46,6 +46,7 @@ Para garantir um código eficiente e atender aos critérios de avaliação, fora
 - **Gestão de Tempo Não-Bloqueante:** Utilização da função `time.ticks_ms()` para calcular intervalos de tempo. Isto evita o uso de `time.sleep()`, permitindo que o sistema permaneça responsivo a comandos do utilizador a qualquer momento.
 - **Debounce por Software:** Uso de uma janela de tempo (250ms) para validar as pressões dos botões, filtrando ruídos da simulação e garantindo acionamentos únicos.
 - **Compatibilidade com CI/CD:** Inclusão de um comando de saída específico (`print("Teste")`) solicitado pelo pipeline de automação para validar a execução bem-sucedida do firmware nas GitHub Actions.
+- **Alteração no DockerFile:** Para implementar o display OLED, o código do driver que o controla foi escrito em um arquivo diferente do `main.py`, o que fez necessária uma mudança no DockerFile que permitisse que todos os arquivos dentro da pasta `src` fossem lidos e executados no momento da execução da build.
 
 ---
 
