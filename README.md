@@ -33,7 +33,7 @@ A solução foi estruturada utilizando uma **Máquina de Estados Finita (FSM)** 
 Os componentes e bibliotecas configurados para simular o hardware real são:
 
 - **Placa Microcontroladora:** ESP32-DevKit-C-V4.
-- **Teclado Matricial 4x4:** Para entrada de dados numéricos e navegação (Pinos de linha: 13, 14, 27, 26; Colunas: 25, 33, 32, 18).
+- **Teclado Numérico 4x4:** Para entrada de dados numéricos e navegação (Pinos de linha: 13, 14, 27, 26; Colunas: 25, 33, 32, 18). Use '*' para zerar o tempo e '#' para iniciar ou pausar a contagem.
 - **Display OLED SSD1306 (I2C):** Interface gráfica principal para verificação de tempo e status de rede (Pinos 21 SDA, 22 SCL).
 - **Buzzer (PWM):** Atuador sonoro operando a 1000Hz (Pino 12).
 - **LED de Status (Pino 2):** Indica visualmente que a contagem está em progresso.
